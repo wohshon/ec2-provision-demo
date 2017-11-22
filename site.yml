@@ -1,0 +1,8 @@
+---
+# This playbook setup a cluster.
+
+- name: create instances on aws
+  remote_user: ec2-user
+  hosts: aws
+  roles:
+    - common
